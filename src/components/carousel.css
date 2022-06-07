@@ -1,0 +1,12 @@
+.react-multiple-carousel__arrow--left {
+    left: calc(-1.2% + 0px);
+}
+
+.react-multiple-carousel__arrow--right {
+    right: calc(-1.45% + 0px);
+}
+
+.react-multi-carousel-item {
+    justify-content: center;
+    display: flex;
+}

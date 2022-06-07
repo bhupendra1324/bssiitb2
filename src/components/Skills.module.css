@@ -1,0 +1,139 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 180px;
+}
+
+.heading{
+    position: relative;
+    font-size: 151px;
+    font-weight: bold;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 30%, rgba(255, 255, 255, 0) 80%);
+    background-clip: text;
+    color: transparent;
+}
+
+.subheading{
+    position: absolute; 
+    top: 80px;
+    left: 40%;
+    font-size: 35px;
+    font-weight: bold;
+    background: linear-gradient(90deg, rgb(228, 64, 103) 0%, rgb(82, 85, 228) 80%);
+    background-clip: text;
+    color: transparent;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+.row div{
+    font-size: 18px;
+    color:rgba(142, 142, 142, 1);
+    
+}
+.card{
+    width: 90%;
+    /* display: flex;
+    justify-content: center; */
+    /* swidth: 30%; */
+    max-width: 1200px;
+
+    
+}
+.skilldata{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px; 
+    margin-left: 40px;
+}
+.skillhead{
+    margin-bottom: 30px;
+    font-size: 22px;
+}
+.skillsection{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.sectionhead{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 18px;
+    
+    margin-bottom: 15px;
+    
+}
+.sectionprogress{
+    position: relative;
+    height: 7px;
+    width: 100%;
+    background-color: gray;
+    border-radius: 100px;
+    margin-bottom: 15px;
+    
+}
+.color{
+    position: absolute;
+    background: linear-gradient(111.57deg, #FF4747 -11.96%, #2361FF 106.52%);
+    height: 7px; 
+    border-radius: 100px;
+}
+
+
+@media only screen and (max-width:1024px) {
+    .heading{
+        font-size: 90px;
+    }
+    .subheading{
+        top: 40px;
+        left: 30%;
+    }
+    .content p{
+        font-size: 19px;
+    }
+    .row div {
+        font-size: 12px;
+    }
+    .card{
+        flex-wrap: wrap;
+    }
+    .skilldata{
+       margin-top: 40px;
+        
+    }
+}
+@media only screen and (max-width:630px) {
+    .heading{
+        font-size: 45px;
+    }
+    .subheading{
+        top: 20px;
+        font-size: 22px;
+        left: 30%;
+    }
+    .content p{
+        font-size: 16px;
+    }
+    .row div{
+        font-size: 8px;
+    }
+    .skilldata{
+        margin-left: 0;
+    }
+}

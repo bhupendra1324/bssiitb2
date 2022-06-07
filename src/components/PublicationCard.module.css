@@ -1,0 +1,47 @@
+.container{
+    display: flex;
+    width: 90%;
+    background-color: rgb(15, 15, 15);
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    
+
+}
+.projectcontent{
+    display: flex;
+    flex-direction: column;
+}
+.heading a{
+    font-size: 25px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    color: white;
+   text-decoration: none;
+}
+.heading a:hover{
+    background: linear-gradient(90deg, rgb(228, 64, 103) 0%, rgb(82, 85, 228) 80%);
+    background-clip: text;
+    color: transparent;
+    
+}
+.desc{
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.desc a{
+    font-size: 16px;
+    background: linear-gradient(90deg, rgb(228, 64, 103) 0%, rgb(82, 85, 228) 80%);
+    background-clip: text;
+    color: transparent;
+    text-decoration: none;
+}
+.publishedin a{
+    margin-left: 20px;
+}
+.author{
+    font-size: 16px;
+    margin-top: 20px;
+}
+

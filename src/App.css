@@ -1,0 +1,30 @@
+@import url(//db.onlinewebfonts.com/c/040a78b437acd0433612f92e61d04a1b?family=Gilroy-Medium);
+*{
+  box-sizing: border-box;
+}
+body{
+  background: #000;
+  color: white;
+  font-family: 'Gilroy-Medium';
+  
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.navbar a{
+  text-decoration: none;
+  color: white;
+  margin: 20px 40px 0 0; 
+  font-size: 20px;
+}
+
+.navbar a.active{
+  background: linear-gradient(135deg, rgb(228, 64, 103) 0%, rgb(209, 84, 153) 45%, rgb(82, 85, 228) 100%);
+  background-clip: text;
+  color: transparent;
+}

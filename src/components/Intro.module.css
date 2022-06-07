@@ -1,0 +1,113 @@
+.introContainer{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    
+    
+}
+
+.intro{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-right: 120px;
+    margin-top: 100px;
+    /* background-image: url("/public/introbg.png"); */
+}
+.ellipse{
+    /* Ellipse 1 */
+
+position: absolute;
+width: 423px;
+height: 423px;
+left: 30px;
+top: 0px;
+z-index: -1;
+background: linear-gradient(128.3deg, #8A2525 35.84%, rgba(0, 71, 255, 0) 61.23%);
+filter: blur(90px);
+opacity: 0.8;
+
+}
+
+.text1 {
+    font-size: 22px;
+    margin: 30px 0 10px 0;
+}
+.gradientText{
+    font-size: 65px;
+    background: linear-gradient(90deg, rgb(228, 64, 103) 0%, rgb(82, 85, 228) 65%);
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+
+}
+.text2{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.projectbtn{
+    width: 150px;
+    padding: 10px;
+    margin-top: 10px;
+    background: transparent;
+    color: white;
+    font-weight: 200;
+    font-size: 16px;
+    border-width: 1px;
+    border-style: solid;
+    border-image: linear-gradient(to right, rgb(242, 242, 242), rgb(43, 42, 42)) 1;
+
+
+}
+.profilepic img{
+    width: 303px;
+    height: 476px; 
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 44.4%, #000000 94.36%);
+    margin-top: 100px;
+}
+
+.arrows{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+.arrows img{
+    width: 80px;
+    height: 91px;
+}
+@media only screen and (max-width: 768px) {
+    .introContainer{
+        flex-wrap: wrap;
+        margin-left: 0;
+        margin-right: 0;
+
+        
+    }
+    .intro{
+        margin-right: 0;
+        align-items: center;
+        text-align: center;
+        
+    }
+    .gradientText{
+        font-size: 50px;
+    }
+    
+}
+@media only screen and (max-width:423px) {
+    .ellipse{
+    width: 300px;
+    height: 300px;
+    left: 0;
+    
+    }
+    .gradientText{
+        font-size: 40px;
+    }
+    
+}
+    
+
+  

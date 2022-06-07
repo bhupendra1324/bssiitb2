@@ -1,0 +1,81 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 180px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    justify-content: center;
+    
+}
+
+.heading{
+    position: relative;
+    font-size: 144px;
+    font-weight: bold;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 30%, rgba(255, 255, 255, 0) 80%);
+    background-clip: text;
+    color: transparent;
+}
+
+.subheading{
+    position: absolute; 
+    top: 70px;
+    left: 43%;
+    font-size: 35px;
+    font-weight: bold;
+    background: linear-gradient(90deg, rgb(228, 64, 103) 0%, rgb(82, 85, 228) 80%);
+    background-clip: text;
+    color: transparent;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 310px;
+    margin: 60px 15px ;
+}
+
+.head{
+    font-size: 22px;
+    margin-top: 20px;
+    font-weight: 400;
+}
+
+.desc{
+    font-size: 18px ;
+    margin-top: 20px;
+    text-align: center;
+    color:rgba(142, 142, 142, 1);
+    
+}
+@media only screen and (max-width:1000px) {
+    .heading{
+        font-size: 90px;
+    }
+    .subheading{
+        top: 40px;
+        left: 30%;
+    }
+    .content p{
+        font-size: 19px;
+    }
+}
+@media only screen and (max-width:630px) {
+    .heading{
+        font-size: 45px;
+    }
+    .subheading{
+        top: 20px;
+        font-size: 20px;
+        left: 30%;
+    }
+    .content p{
+        font-size: 16px;
+    }
+}

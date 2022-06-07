@@ -1,0 +1,71 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.heading{
+    position: relative;
+    font-size: 168px;
+    font-weight: bold;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 30%, rgba(255, 255, 255, 0) 80%);
+    background-clip: text;
+    color: transparent;
+}
+
+.subheading{
+    position: absolute; 
+    top: 80px;
+    left: 35%;
+    font-size: 55px;
+    font-weight: bold;
+    background: linear-gradient(90deg, rgb(228, 64, 103) 0%, rgb(82, 85, 228) 80%);
+    background-clip: text;
+    color: transparent;
+}
+.projectbutton{
+    display: flex;
+    width: 70%;
+    margin-left: 32px;
+    margin-bottom: 20px;
+    
+}
+.addprojectbutton{
+    background-color:rgba(255, 255, 255, 1);
+    color:  rgba(0, 0, 0, 1);
+    width: 120px;
+    height: 45px;
+    border: 0;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+@media only screen and (max-width:1020px) {
+    .heading{
+        font-size: 90px;
+    }
+    .subheading{
+        top: 40px;
+        left: 30%;
+    }
+    
+}
+@media only screen and (max-width:630px) {
+    .heading{
+        font-size: 47px;
+    }
+    .subheading{
+        top: 20px;
+        font-size: 25px;
+        left: 30%;
+    }
+
+}
