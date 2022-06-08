@@ -1,14 +1,13 @@
-import React from 'react';
-import styles from "./Questions.module.css"
-import Accordion from './Accordion';
+import React from "react";
+import styles from "./Questions.module.css";
+import Accordion from "./Accordion";
 
-
-const Questions=()=>{
-    return(
-       <div className={styles.container}>
-           <div className={styles.questionContent}>Any Questions ?</div>
-           <div className={styles.accordion}>
-                {/* <Collapsible trigger="Why Did you make this website ?" triggerStyle={{background: 'red'}}>
+const Questions = () => {
+  return (
+    <div className={styles.container}>
+      {/* <div className={styles.questionContent}>Any Questions ?</div> */}
+      {/* <div className={styles.accordion}> */}
+      {/* <Collapsible trigger="Why Did you make this website ?" triggerStyle={{background: 'red'}}>
                     <p>
                     I created and deployed this website on a private DigitalOcean server so that I could learn more about web app design and back-end development.
                     </p>
@@ -16,7 +15,7 @@ const Questions=()=>{
                     In the future I will use this website as a nesting ground for web-based computer vision and NLP models. Though I don't expect it to be anything more than a portfolio site, I strongly suspect that these skills will be crucial to technological development in the years to come.
                     </p>
                             </Collapsible> */}
-                <Accordion title="Why Did you make this website ?">
+      {/* <Accordion title="Why Did you make this website ?">
                 <p>I created and deployed this website on a private DigitalOcean server so that I could learn more about web app design and back-end development.</p>
 
                 <p>In the future I will use this website as a nesting ground for web-based computer vision and NLP models. Though I don't expect it to be anything more than a portfolio site, I strongly suspect that these skills will be crucial to technological development in the years to come.</p>
@@ -37,12 +36,10 @@ const Questions=()=>{
     <Accordion title="What kind of work do you see youself doing ? ">
      <p>I am interested in building modular machine learning applications that can communicate with existing production systems.</p>
      <p>Position titles that do this work are not well defined. I describe my perfect future position to be a mix of data science, machine learning engineering, and devops. Essentially a machine learning specialist with the skills to deploy a model to production.</p>
-    </Accordion>
+    </Accordion> */}
+      {/* </div> */}
     </div>
-           </div>
-           
-      
-    )
-}
+  );
+};
 
-export default Questions
+export default Questions;

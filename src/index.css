@@ -11,3 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: "GilroyMedium";
+  src: local("GilroyMedium"),
+   url("./fonts/GilroyMedium.ttf") format("truetype");
+  
+  }
+  
