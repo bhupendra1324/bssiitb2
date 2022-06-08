@@ -9,10 +9,14 @@ body{
 }
 
 .navbar{
+  position: sticky;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  top:0;
+  z-index:100;
+  transition: 0.8s all ease-in;
 }
 
 .navbar a{
