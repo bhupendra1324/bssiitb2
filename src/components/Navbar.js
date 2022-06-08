@@ -18,7 +18,7 @@ const Navbar=()=>{
         <div className='navbar'>
             <NavLink exact to="/" activeClassName='active'>Home</NavLink>
             <NavLink exact to="/about" >About</NavLink>
-            <NavLink exact to="/portfolio" >Portfolio</NavLink>
+            <NavLink exact to="/projects" >Portfolio</NavLink>
             <NavLink exact to="/publication" >Publication</NavLink>
             <a href={url} download target="_blank">Download Resume</a>
         </div>

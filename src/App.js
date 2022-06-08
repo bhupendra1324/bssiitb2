@@ -19,7 +19,7 @@ function App() {
         <Route path= "/about" element={<About/>}/>
         <Route path= "/projectpage/:id" element={<ProjectPage/>}/>
         <Route path= "/publication/:id" element={<PublicationPage/>}/>
-        <Route path="/portfolio" element={<Portfolio/>}/>
+        <Route path="/projects" element={<Portfolio/>}/>
         <Route path="/publication" element={<Publication/>}/>
       </Routes>
     </BrowserRouter>
