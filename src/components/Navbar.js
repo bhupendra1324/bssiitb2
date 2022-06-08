@@ -30,16 +30,16 @@ const Navbar = () => {
       className="navbar"
       style={colorChange ? { background: "black" } : null}
     >
-      <NavLink exact to="/" activeClassName="active">
+      <NavLink exact to="/bss" activeClassName="active">
         Home
       </NavLink>
-      <NavLink exact to="/about">
+      <NavLink exact to="/bss/about">
         About
       </NavLink>
-      <NavLink exact to="/projects">
+      <NavLink exact to="/bss/projects">
         Portfolio
       </NavLink>
-      <NavLink exact to="/publication">
+      <NavLink exact to="/bss/publication">
         Publication
       </NavLink>
       <a href={url} download target="_blank">
