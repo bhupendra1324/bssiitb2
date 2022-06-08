@@ -1,6 +1,5 @@
 {
   "name": "portfolio",
-  "homepage": "https://bsolanki.netlify.app/bss",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
