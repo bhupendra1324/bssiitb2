@@ -54,3 +54,26 @@
     font-size: 16px;
 }
 
+@media only screen and (max-width:670px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .image {
+        display: flex;
+        padding: 10px;
+    }
+
+    .image img {
+        height: 95px;
+        width: 95px;
+    }
+
+    .heading a {
+        font-size: 20px;
+        margin-bottom: 15px;
+        cursor: pointer;
+        text-decoration: none;
+        color: white;
+    }
+}

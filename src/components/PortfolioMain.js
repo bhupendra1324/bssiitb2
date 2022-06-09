@@ -39,7 +39,7 @@ const PortfolioMain=()=>{
         <div className={styles.cards}>
         {portfolioData.map((data)=>{
             return(
-                <PortfolioCard id={data.id} image={data.image} heading={data.heading} desc={data.desc} duration={data.duration} author={data.author}/>
+                <PortfolioCard id={data.id} image={data.image} heading={data.heading} desc={data.desc} duration={data.duration} author={data.author} points={data.points}/>
             )
         })}
 
