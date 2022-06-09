@@ -7,11 +7,11 @@ const PublicationCard = (props) => {
     <div className={styles.container}>
       <div className={styles.projectcontent}>
         <div className={styles.heading}>
-          <Link to={`/bss/publication/${props.id}`}>{props.title}</Link>
+          <Link to={`/publication/${props.id}`}>{props.title}</Link>
         </div>
         <div className={styles.desc}>
           {props.abstract.slice(0, 130) + "... "}
-          <Link to={`/bss/publication/${props.id}`}>Read More</Link>
+          <Link to={`/publication/${props.id}`}>Read More</Link>
         </div>
         <div className={styles.publishedin}>
           {props.publishedin}

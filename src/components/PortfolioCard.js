@@ -10,11 +10,11 @@ const PortfolioCard = (props) => {
       </div>
       <div className={styles.projectcontent}>
         <div className={styles.heading}>
-          <Link to={`/bss/projectpage/${props.id}`}>{props.heading}</Link>
+          <Link to={`/projectpage/${props.id}`}>{props.heading}</Link>
         </div>
         <div className={styles.desc}>
           {props.desc.slice(0, 130) + "... "}
-          <Link to={`/bss/projectpage/${props.id}`}>Read More</Link>
+          <Link to={`/projectpage/${props.id}`}>Read More</Link>
         </div>
         {/* <div className={styles.author}>{props.author}</div> */}
         <div className={styles.duration}>{props.duration}</div>

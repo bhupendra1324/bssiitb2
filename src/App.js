@@ -19,19 +19,25 @@ function App() {
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route path="/bss" index element={<Home />} />
+        <Route path="/" index element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/projectpage/:id" element={<ProjectPage />} />
+        <Route path="/publication/:id" element={<PublicationPage />} />
+        <Route path="/projects" element={<Portfolio />} />
+        <Route path="/publication" element={<Publication />} />
+        {/* <Route path="/bss" index element={<Home />} />
         <Route path="/bss/about" element={<About />} />
         <Route path="/bss/projectpage/:id" element={<ProjectPage />} />
         <Route path="/bss/publication/:id" element={<PublicationPage />} />
         <Route path="/bss/projects" element={<Portfolio />} />
-        <Route path="/bss/publication" element={<Publication />} />
-        <Route path="/" element={<Navigate to="/bss" />} />
+        <Route path="/bss/publication" element={<Publication />} /> */}
+        {/* <Route path="/" element={<Navigate to="/bss" />} />
         <Route path="/about" element={<Navigate to="/bss/about" />} />
         <Route path="/projects" element={<Navigate to="/bss/projects" />} />
         <Route
           path="/publication"
           element={<Navigate to="/bss/publication" />}
-        />
+        /> */}
       </Routes>
     </BrowserRouter>
   );

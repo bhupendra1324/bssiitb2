@@ -9,7 +9,7 @@ const ProjectData = (props) => {
         <img src={props.icon ? props.icon : "/logo192.png"} />
       </div>
       <div className={styles.ProjectHead}>
-        <Link to={`/bss/projectpage/${props.id}`}>{props.heading}</Link>
+        <Link to={`/projectpage/${props.id}`}>{props.heading}</Link>
       </div>
       <div className={styles.ProjectDesc}>{props.desc}</div>
     </div>
