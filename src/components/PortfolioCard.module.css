@@ -28,10 +28,14 @@
     margin-bottom: 15px;
     cursor: pointer;
     text-decoration: none;
-    color: white;
+    /* color: white; */
+    background: linear-gradient(90deg, rgb(228, 64, 103) 0%, rgb(82, 85, 228) 80%);
+    
+        background-clip: text;
+        color: transparent;
 }
 .heading a:hover{
-    background: linear-gradient(90deg, rgb(228, 64, 103) 0%, rgb(82, 85, 228) 80%);
+    background: linear-gradient(90deg, rgb(82, 85, 228) 0%, rgb(228, 64, 103) 80%);
     background-clip: text;
     color: transparent;
     

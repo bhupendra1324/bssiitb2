@@ -22,7 +22,7 @@ const PortfolioCard = (props) => {
                 Read More
              </Link> */}
         </ul>
-        <div className={styles.author}>{props.author}</div>
+        {/* <div className={styles.author}>{props.author}</div> */}
         <div className={styles.duration}>{props.duration}</div>
       </div>
     </div>

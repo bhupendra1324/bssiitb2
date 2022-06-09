@@ -8,6 +8,11 @@
     padding: 20px;
     border-radius: 10px;
 }
+h1 {
+    background: linear-gradient(90deg, rgb(228, 64, 103) 0%, rgb(82, 85, 228) 80%);
+    background-clip: text;
+    color: transparent;
+}
 .author{
     align-self: flex-start;
     margin-left: 25px;

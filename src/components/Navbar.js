@@ -26,25 +26,33 @@ const Navbar = () => {
   window.addEventListener("scroll", changeNavbarColor);
 
   return (
-    <div
-      className="navbar"
-      style={colorChange ? { background: "black" } : null}
-    >
-      <NavLink exact to="/" activeClassName="active">
-        Home
-      </NavLink>
-      <NavLink exact to="/about">
-        About
-      </NavLink>
-      <NavLink exact to="/projects">
-        Portfolio
-      </NavLink>
-      <NavLink exact to="/publication">
-        Publication
-      </NavLink>
-      <a href={url} download target="_blank">
-        Download Resume
-      </a>
+    <div class="navbar" style={colorChange ? { background: "black" } : null}>
+      <input type="checkbox" id="nav-check" />
+      <div class="nav-btn">
+        <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+
+      <div class="nav-links">
+        <NavLink exact to="/" activeClassName="active">
+          Home
+        </NavLink>
+        <NavLink exact to="/about">
+          About
+        </NavLink>
+        <NavLink exact to="/projects">
+          Portfolio
+        </NavLink>
+        <NavLink exact to="/publication">
+          Publication
+        </NavLink>
+        <a href={url} download target="_blank">
+          Download Resume
+        </a>
+      </div>
     </div>
   );
 };
