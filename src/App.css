@@ -17,21 +17,24 @@ body{
   top:0;
   z-index:100;
   transition: 0.8s all ease-in;
-  height: 40px;
+  /* height: 40px; */
 }
 
-.navbar a{
+.navbar a {
   text-decoration: none;
   color: white;
   margin: 20px;
   font-size: 20px;
 }
 
-.navbar a.active{
+.navbar a.active {
   background: linear-gradient(135deg, rgb(228, 64, 103) 0%, rgb(209, 84, 153) 45%, rgb(82, 85, 228) 100%);
   background-clip: text;
   color: transparent;
 }
+
+
+
 .navbar>.nav-btn {
   display: none;
 }
@@ -99,4 +102,100 @@ body{
     height: calc(100vh - 50px);
     overflow-y: auto;
   }
+}
+
+#menu {
+  z-index: 2;
+}
+
+#menu-bar {
+  width: 45px;
+  height: 40px;
+  margin: 30px 0 20px 20px;
+  cursor: pointer;
+}
+
+.bar {
+  height: 4px;
+  width: 100%;
+  background: linear-gradient(90deg, rgb(228, 64, 103) 0%, rgb(82, 85, 228) 65%);
+  display: block;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+#bar1 {
+  transform: translateY(-4px);
+}
+
+#bar3 {
+  transform: translateY(4px);
+}
+
+.nav-links {
+  transition: 0.3s ease;
+  display: none;
+}
+
+.nav-links ul {
+  padding: 0 22px;
+}
+
+.nav-links li {
+  list-style: none;
+  padding: 12px 0;
+}
+
+.nav-links li a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.nav-links li a:hover {
+  font-weight: bold;
+}
+
+.menu-bg,
+#menu {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.menu-bg {
+  z-index: 1;
+  width: 0;
+  height: 0;
+  margin: 30px 0 20px 20px;
+  background: linear-gradient(to top, #5255E4 18%, #E44067 84%);
+
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+
+.change {
+  display: block;
+}
+
+.change .bar {
+  background: white;
+}
+
+.change #bar1 {
+  transform: translateY(4px) rotateZ(-45deg);
+}
+
+.change #bar2 {
+  opacity: 0;
+}
+
+.change #bar3 {
+  transform: translateY(-6px) rotateZ(45deg);
+}
+
+.change-bg {
+  width: 630px;
+  height: 540px;
+  transform: translate(-60%, -30%);
 }
