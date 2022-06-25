@@ -12,7 +12,7 @@
     text-align: center;
     
 }
-.contactemail{
+/* .contactemail{
     display: flex;
 }
 .contactemail input{
@@ -38,7 +38,7 @@
     font-weight: 400;
     cursor: pointer;
     
-}
+} */
 .socialicons{
     display: flex;
     flex-direction: column;
@@ -56,6 +56,9 @@
     justify-content: space-between;
     margin-top: 40px;
     
+}
+.contactme{
+    margin-top: 20px;
 }
 @media only screen and (max-width:600px) {
     .contactemail{

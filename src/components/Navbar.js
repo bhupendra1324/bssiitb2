@@ -19,7 +19,7 @@ const Navbar = () => {
 
   const resume = async () => {
     const storage = getStorage();
-    const download = await getDownloadURL(ref(storage, "dummy.pdf"));
+    const download = await getDownloadURL(ref(storage, "Resume_BSS.pdf"));
     seturl(download);
   };
 
@@ -73,6 +73,11 @@ const Navbar = () => {
                   </NavLink>
                 </li>
                 <li>
+                  <NavLink exact to="/courses">
+                    Certifications
+                  </NavLink>
+                </li>
+                <li>
                   <NavLink exact to="/publication">
                     Publication
                   </NavLink>
@@ -101,6 +106,9 @@ const Navbar = () => {
           </NavLink>
           <NavLink exact to="/projects">
             Portfolio
+          </NavLink>
+          <NavLink exact to="/courses">
+            Certifications
           </NavLink>
           <NavLink exact to="/publication">
             Publication

@@ -1,0 +1,61 @@
+.container {
+    display: flex;
+    width: 90%;
+    background-color: rgb(15, 15, 15);
+    align-items: center;
+    padding: 25px;
+    border-radius: 10px;
+    margin-top: 30px;
+
+
+}
+
+.projectcontent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.heading {
+    font-size: 32px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(135deg, rgb(228, 64, 103) 0%, rgb(82, 85, 228) 80%, rgb(82, 85, 228) 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+.desc {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+@media only screen and (max-width:720px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .heading a {
+        font-size: 20px;
+        margin-bottom: 15px;
+        cursor: pointer;
+        text-decoration: none;
+        color: white;
+    }
+
+    .projectcontent {
+        min-width: unset;
+    }
+
+    .flex {
+        flex-wrap: wrap;
+    }
+}
