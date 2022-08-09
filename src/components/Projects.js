@@ -40,8 +40,15 @@ const Projects = () => {
   const Fetchdata = async () => {
     const projectCol = collection(db, "project");
     const projectSnapshot = await getDocs(projectCol);
-    const projectList = projectSnapshot.docs.map((doc) => {
+
+    let projectList = projectSnapshot.docs.map((doc) => {
       return { ...doc.data(), id: doc.id };
+    });
+    projectList.map((x) => {
+      x["id"] = +x.itemID.substring(7);
+    });
+    projectList = projectList.sort((a, b) => {
+      return a.id - b.id;
     });
     setProjectData(projectList);
   };

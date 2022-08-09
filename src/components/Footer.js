@@ -20,7 +20,7 @@ const Footer = () => {
         <div>Social Media</div>
         <div className={styles.icons}>
           <div>
-            <svg
+            <a target="_blank" href=""><svg
               width="48"
               height="48"
               viewBox="0 0 48 48"
@@ -62,7 +62,7 @@ const Footer = () => {
                   <stop offset="1" stop-color="#6600FF" stop-opacity="0" />
                 </radialGradient>
               </defs>
-            </svg>
+            </svg></a>
           </div>
           <div>
             <a
